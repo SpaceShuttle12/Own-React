@@ -41,8 +41,8 @@ var step2 = (
 //   TinyReact.render(step2, root);
 // }, 3000)
 
-const Heart = function () {
-  return <span>&hearts;</span>
+const Heart = function (props) {
+  return <span style={props.style }>&hearts;</span>
 }
 console.log(Heart);
-TinyReact.render(<Heart />, root);
+TinyReact.render(<Heart style="color:red" />, root);
